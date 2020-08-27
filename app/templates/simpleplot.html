@@ -1,0 +1,15 @@
+{% block title %} Simple Plot {% endblock %}
+
+
+{% block meta %} <meta http-equiv="refresh" content="15">{% endblock %}
+{% block content %}
+
+<div class="container">
+        <h1>Simple Plot</h1>      
+        
+        <h2>{{title}}</h2>
+
+        <img src="data:image/png;base64,{{ fig }}"  width="auto" height="auto">
+</div>
+    
+{% endblock %}
